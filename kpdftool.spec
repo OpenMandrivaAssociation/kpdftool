@@ -1,7 +1,7 @@
 
 %define name	kpdftool
 %define version	0.22
-%define rel	1
+%define rel	2
 
 Summary:	GhostView and ImageMagick GUI for PDF/PS files
 Name:		%{name}
@@ -11,6 +11,7 @@ License:	GPL+
 Group:		Text tools
 URL:		http://www.kde-apps.org/content/show.php?content=33194
 Source:		33194-kpdftool-%{version}.zip
+Patch0:		kpdftool-includes.patch
 BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	qt3-devel
 Suggests:	imagemagick
@@ -25,11 +26,12 @@ protect the text into new files in a simple and practical way.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 export PATH=%{qt3dir}/bin:$PATH
 qmake
-%make CXXFLAGS="%{optflags}"
+%make CXXFLAGS="%{optflags}" LFLAGS="%{ldflags}"
 
 %install
 rm -rf %{buildroot}
