@@ -1,7 +1,7 @@
 
 %define name	kpdftool
 %define version	0.22
-%define rel	2
+%define rel	3
 
 Summary:	GhostView and ImageMagick GUI for PDF/PS files
 Name:		%{name}
