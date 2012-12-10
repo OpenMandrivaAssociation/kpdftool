@@ -52,3 +52,29 @@ rm -rf %{buildroot}
 %{_bindir}/kpdftool
 %{_datadir}/applications/kpdftool.desktop
 %{_iconsdir}/hicolor/*/apps/%{name}*
+
+%changelog
+* Tue May 29 2012 Andrey Bondrov <abondrov@mandriva.org> 0.23.1-1mdv2011.0
++ Revision: 801105
+- New version 0.23.1, add icons, fix license
+
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.22-4mdv2011.0
++ Revision: 620039
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 0.22-3mdv2010.0
++ Revision: 438139
+- rebuild
+
+* Sat Feb 28 2009 Anssi Hannula <anssi@mandriva.org> 0.22-2mdv2009.1
++ Revision: 345999
+- fix build with gcc4.3 (includes.patch)
+- use ldflags
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Fri Dec 28 2007 Anssi Hannula <anssi@mandriva.org> 0.22-1mdv2008.1
++ Revision: 138971
+- initial Mandriva release
+
