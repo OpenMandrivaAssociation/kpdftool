@@ -1,7 +1,7 @@
 Summary:	GhostView and ImageMagick GUI for PDF/PS files
 Name:		kpdftool
 Version:	0.23.1
-Release:	%mkrel 1
+Release:	2
 License:	GPLv3+
 Group:		Text tools
 URL:		http://www.kde-apps.org/content/show.php?content=33194
