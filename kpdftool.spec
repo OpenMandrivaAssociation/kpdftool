@@ -4,7 +4,7 @@ Version:	0.23.1
 Release:	2
 License:	GPLv3+
 Group:		Text tools
-URL:		http://www.kde-apps.org/content/show.php?content=33194
+URL:		https://www.kde-apps.org/content/show.php?content=33194
 Source:		33194-kpdftool-%{version}.zip
 BuildRequires:	qt4-devel
 Suggests:	imagemagick
